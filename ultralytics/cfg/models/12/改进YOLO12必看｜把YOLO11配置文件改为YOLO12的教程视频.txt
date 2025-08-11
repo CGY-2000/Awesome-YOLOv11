@@ -1,0 +1,1 @@
+YOLO12改进｜YOLO11的200多个改进创新点迁移到YOLO12上的示例教程一: https://www.bilibili.com/video/BV1acXFYoEgN/
