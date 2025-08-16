@@ -70,6 +70,7 @@ from ultralytics.nn.modules import (
     A2C2f
 )
 from ultralytics.nn.extra_modules import *
+from ultralytics.nn.my_modules import *
 from ultralytics.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
 from ultralytics.utils.checks import check_requirements, check_suffix, check_yaml
 from ultralytics.utils.loss import (
@@ -1229,7 +1230,7 @@ def parse_model(d, ch, verbose=True, warehouse_manager=None):  # model_dict, inp
                    EffectiveSEModule, LSKA, SegNext_Attention, DAttention, MLCA, TransNeXt_AggregatedAttention,
                    FocusedLinearAttention, LocalWindowAttention, ChannelAttention_HSFPN, ELA_HSFPN, CA_HSFPN, CAA_HSFPN, 
                    DySample, CARAFE, CAA, ELA, CAFM, AFGCAttention, EUCB, EfficientChannelAttention, ContrastDrivenFeatureAggregation, 
-                   FSA, AttentiveLayer, EUCB_SC}:
+                   FSA, AttentiveLayer, EUCB_SC, LEASim, CAMSAM}:
             c2 = ch[f]
             args = [c2, *args]
             # print(args)
